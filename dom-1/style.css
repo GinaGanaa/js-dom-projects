@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.student {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  gap: 15px;
+}
+.student img {
+  border-radius: 50%;
+  width: 100px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <h1>YourEvent</h1>
+      <h2 class="online">Online Registration</h2>
+      <form id="form">
+        <div class="names">
+          <div class="firstName">
+            <label for="First name">First Name</label>
+          </div>
+          <div>
+            <label for="Last name">Last name</label>
+          </div>
+        </div>
+        <div class="inputOfName">
+          <input
+            type="text"
+            name="First Name"
+            id="firstName"
+            placeholder="First Name"
+          />
+          <input
+            type="Last Name"
+            name="Last Name"
+            id="lastName"
+            placeholder="Last Name"
+          />
+        </div>
+        <div>
+          <label for="Email Address">Email Address</label>
+        </div>
+        <input
+          class="inputOfAll"
+          type="Email Address"
+          name="Email Address"
+          id="EmailAddress"
+          placeholder="Email Address"
+        />
+        <div>
+          <label for="Company">Company (if applicable)</label>
+        </div>
+        <input
+          class="inputOfAll"
+          type="Company"
+          name="Company"
+          id="Company"
+          placeholder="Company"
+        />
+        <div>
+          <label for="Physical Address">Physical Address</label>
+        </div>
+        <input
+          class="inputOfAll"
+          type="Physical Address"
+          name="Physical Address"
+          id="PhysicalAddress"
+          placeholder="Physical Address"
+        />
+        <div><label for="Date of birth">Date of Birth</label></div>
+        <div>
+          <select id="month">
+            <option value="" disabled selected>Month</option>
+            <option value="january">January</option>
+            <option value="fabruary">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+          </select>
+          <select id="day">
+            <option value="" disabled selected>Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <select id="year">
+            <option value="" disabled selected>Year</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+          </select>
+        </div>
+      </form>
+      <button
+        class="submit"
+        onclick="registerHandler()"
+        style="width: 20%; height: 50px; color: grey"
+      >
+        Submit
+      </button>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

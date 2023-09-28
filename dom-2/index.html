@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="count">
+        <button onclick="changeNumber('+')">+</button>
+        <p id="number">10</p>
+        <button onclick="changeNumber('-')">-</button>
+      </div>
+      <div class="count">
+        <button onclick="changeNumber('+10')">+10</button>
+        <button onclick="changeNumber('-10')">-10</button>
+      </div>
+      <div class="changeBgColor">
+        <div class="black">
+          <button onclick="black()">black</button>
+        </div>
+        <div class="yellow">
+          <button onclick="yellow()">yellow</button>
+        </div>
+        <div class="green">
+          <button onclick="green()">green</button>
+        </div>
+        <div class="red">
+          <button onclick="red()">red</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

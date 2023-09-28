@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #f2ecec;
+  max-width: 700px;
+  height: 100vh;
+}
+body,
+html {
+  background-image: url("./stars.png");
+  background-size: 800px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 25px;
+  color: #edf4ed;
+}
+h2 {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+  background-color: #dff6ee;
+  height: 50px;
+  width: 90%;
+  margin: auto;
+  font-weight: 400;
+}
+form {
+  width: 90%;
+  height: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+}
+#lastName,
+#firstName {
+  border-radius: 5px;
+  height: 40px;
+  border-color: rgb(191, 188, 188);
+  padding-left: 10px;
+}
+.inputOfName {
+  display: flex;
+  gap: 30px;
+}
+.online {
+  padding-top: 15px;
+  border-radius: 5px;
+}
+.names {
+  display: flex;
+  gap: 220px;
+}
+#month,
+#day,
+#year {
+  border-radius: 5px;
+  width: 160px;
+  height: 40px;
+  appearance: none;
+  background-image: url("./select-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top -1px;
+  background-size: 25%;
+  padding-left: 10px;
+  font-size: 15px;
+  color: gray;
+  cursor: pointer;
+}
+#month option:checked {
+  color: black;
+}
+#month option:first-child {
+  display: none;
+}
+.inputOfName input {
+  width: 400px;
+}
+.inputOfAll {
+  border-radius: 5px;
+  height: 40px;
+  border-color: rgb(191, 188, 188);
+  padding-left: 10px;
+}
+.star {
+  width: 800px;
+}
+.submit {
+  margin-left: 60px;
+  border-radius: 10px;
+  background-color: rgb(158, 229, 229);
+  color: rgb(96, 6, 6);
+  font-size: 15px;
+  cursor: pointer;
+}

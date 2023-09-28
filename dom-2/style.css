@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.count {
+  margin: 100px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.count button {
+  width: 100px;
+  height: 60px;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.658);
+  cursor: pointer;
+  transition: opacity 0.5;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 30px;
+}
+.count button:active {
+  opacity: 0.6;
+  transition: opacity 0.5;
+}
+
+.count p {
+  font-size: 30px;
+}
+.black button {
+  width: 100px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: 200px;
+  background-color: aqua;
+}
+.black button:active {
+  opacity: 0.6;
+  transition: opacity 0.5;
+}
+.yellow button:active {
+  opacity: 0.6;
+  transition: opacity 0.5;
+}
+.red button:active {
+  opacity: 0.6;
+  transition: opacity 0.5;
+}
+.green button:active {
+  opacity: 0.6;
+  transition: opacity 0.5;
+}
+.bgcolor {
+  display: flex;
+  gap: 10px;
+}
+.yellow button {
+  width: 100px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: 200px;
+  background-color: aqua;
+  margin-top: 10px;
+}
+.red button {
+  width: 100px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: 200px;
+  background-color: aqua;
+  margin-top: 10px;
+}
+.green button {
+  width: 100px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: 200px;
+  background-color: aqua;
+  margin-top: 10px;
+}
