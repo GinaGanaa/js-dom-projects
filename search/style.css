@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.product_price {
+  color: red;
+}
+.something {
+  color: green;
+}
+.card_image {
+  width: 100px;
+}
