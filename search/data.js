@@ -1,8 +1,9 @@
 export const products = [
   {
     id: 1,
-    name: "iPhone 13 Pro Plus",
-    image: "https://picsum.photos/800/600",
+    name: "iPhone 13 Pro Max",
+    image:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-iphone-13-pro-max-silver-2023?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1679072987085",
     description: "The latest iPhone model with advanced features.",
     price: 799.99,
     category: "Electronics",

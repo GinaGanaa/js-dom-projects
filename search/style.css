@@ -5,11 +5,47 @@
 }
 
 .product_price {
-  color: red;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
 }
 .something {
   color: green;
 }
 .card_image {
   width: 100px;
+  margin: 20px 70px;
+}
+.root {
+  width: 250px;
+  height: 400px;
+  background-color: rgb(176, 251, 251);
+  margin: 20px;
+  border-radius: 10px;
+}
+.root button {
+  width: 200px;
+  height: 50px;
+  margin: 50px 25px;
+  border: none;
+  color: #fff;
+  background-color: rgb(24, 135, 208);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.root button:active {
+  opacity: 0.5;
+}
+.product_title {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+.product_description {
+  color: gray;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 15px;
 }

@@ -12,9 +12,10 @@ const oneProduct = products[0];
 const byQuerySelector = document.querySelector(".cards");
 
 const title = `<h2 class="product_title">${oneProduct.name}</h2>`;
+const description = `<p class="product_description">${oneProduct.description}</p>`;
 const image = `<img class="card_image" src="${oneProduct.image}" alt=""/>`;
-const price = `<p class="product_price">${oneProduct.price}$</p>`;
-const card = `<div class="card">${title}${image}${price}</div>`;
+const price = `<p class="product_price">$${oneProduct.price}</p>`;
+const card = `<div class="card">${image}${title}${description}${price}</div>`;
 
 //adding card element to the div with class cards
 byQuerySelector.innerHTML = card;
