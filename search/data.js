@@ -8,7 +8,7 @@ export const products = [
     price: 799.99,
     category: "Electronics",
     brand: "Apple",
-    rating: 3.0,
+    rating: 4.0,
     in_stock: true,
     color: "Midnight Green",
     weight: "0.2 kg",

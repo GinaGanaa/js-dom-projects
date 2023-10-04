@@ -11,8 +11,11 @@ for (let i = 1; i <= oneProduct.rating; i++) {
   coloredStars =
     coloredStars + '<img src="./images/star-colored.svg"/ width="20px">';
 }
-//black stars uudiig gargaj ireh
 let blackStars = "";
+for (let i = 5; i > oneProduct.rating; i--) {
+  blackStars = blackStars + '<img src="./images/star-black.svg"/ width="20px">';
+}
+//black stars uudiig gargaj ireh
 //loop
 
 // const num = 5;
