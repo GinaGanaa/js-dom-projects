@@ -13,3 +13,7 @@ button {
   cursor: pointer;
   outline: inherit;
 }
+
+input {
+  border: none;
+}
