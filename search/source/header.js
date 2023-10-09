@@ -11,7 +11,6 @@ import { products } from "./data.js";
       </p>
     </div> */
 }
-console.log(products);
 //loop erguul
 //productuudiin categoryydiig n aguulsan array uusge. ["Electronic","Electronic","Electronic", "Clothing","Electronic"]
 //array dotoroh davhatssan elemenuudiig ustgana ["Electronic", "Clothing", "Kitchen"]
@@ -20,3 +19,8 @@ console.log(products);
 const search = `<input type="text" placeholder="search"/>`;
 
 export default "";
+let category = [];
+for (let i = 0; i < products.length; i++) {
+  category = products[i].category;
+  console.log(category);
+}
