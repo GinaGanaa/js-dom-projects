@@ -3,7 +3,7 @@ export const news = [
     id: "a1b2",
     title: "Tech Innovations",
     text: "Exciting developments in the tech world as new innovations promise to reshape industries.",
-    image: "<img src='./box.png'",
+    image: "https://picsum.photos/800/400?random=1",
     date: "2023-09-29",
     writer: "John Doe",
     view_count: 1200,

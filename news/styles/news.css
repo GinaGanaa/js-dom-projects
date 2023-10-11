@@ -1,0 +1,28 @@
+.news {
+  display: flex;
+  background-color: rgb(215, 233, 233);
+  margin: 20px;
+}
+.newsInfo {
+  padding: 10px 20px;
+}
+.news_title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.news_text {
+  font-size: 14px;
+  padding-top: 12px;
+  color: gray;
+}
+.bottom_text {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  font-size: 13px;
+  color: gray;
+  padding-left: 220px;
+}
+.newsImage {
+  width: 250px;
+}
