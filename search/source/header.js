@@ -19,19 +19,67 @@ import { products } from "./data.js";
 const search = `<input type="text" placeholder="search"/>`;
 
 export default "";
-let category = [];
+let categories = [];
 for (let i = 0; i < products.length; i++) {
-  category[i] = products[i].category;
+  categories[i] = products[i].category;
 }
-function removeDuplicates(category) {
-  return category.filter((item, index) => category.indexOf(item) === index);
+function removeDuplicates(incomingData) {
+  return incomingData.filter(
+    (item, index) => incomingData.indexOf(item) === index
+  );
 }
-document.getElementById("category").innerHTML = removeDuplicates(category);
-let categories = document.getElementById("category").innerHTML;
-`<option>${categories}</option>`;
+
+{
+  /*       
+<option value="science">Science</option>
+<option value="technology">Technology</option>
+<option value="clothing">Clothing</option>
+<option value="foot wear">Foot wear</option> */
+}
+console.log();
+// document.getElementById(
+//   "category"
+// ).innerHTML = `<option value="science">Science</option>`;
+categories = removeDuplicates(categories);
+let options = "";
+for (let i = 0; i < categories.length; i++) {
+  options += `<option value="${categories[i].toLowerCase()}">${
+    categories[i]
+  }</option>`;
+}
+document.getElementById("category").innerHTML = options;
+
+//2 hours of planning can save weeks of work
+
+// altan durem
+// yu hiih gej baigaa bilee ?
+// tuuniig hiihed yu heregtei ve ?
+// ene heregtei zuiliig herhen hiih ve ?
+
+// Brand options generating
+
+//category filtering
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function filterFunction(a) {
+  if (a % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//end tegs toonuudiig n yalgaj oldog filter bichigdsen baina
+let answer = nums.filter(filterFunction);
+console.log(answer);
+// eniig harj oilgoj baigaad. product uudaas "Electronics" gesen category toi productuudiig yalgaj oldog filter bichih
+
+//brand filtering
+//sorting
+
 // console.log(document.getElementById("category").innerHTML);
 //odoo category dotor 4n category toi array baigaa
 // ter category go html generate hiigeed html ruu gee hiij ogno
+
 const searchBtn = document.querySelector(".searchBtn");
 
 const searchHandler = () => {
