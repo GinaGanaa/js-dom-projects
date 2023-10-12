@@ -23,11 +23,13 @@ let category = [];
 for (let i = 0; i < products.length; i++) {
   category[i] = products[i].category;
 }
-console.log(category);
 function removeDuplicates(category) {
   return category.filter((item, index) => category.indexOf(item) === index);
 }
-console.log(removeDuplicates(category));
+document.getElementById("category").innerHTML = removeDuplicates(category);
+let categories = document.getElementById("category").innerHTML;
+`<option>${categories}</option>`;
+// console.log(document.getElementById("category").innerHTML);
 //odoo category dotor 4n category toi array baigaa
 // ter category go html generate hiigeed html ruu gee hiij ogno
 const searchBtn = document.querySelector(".searchBtn");
