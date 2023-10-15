@@ -19,6 +19,7 @@ import { products } from "./data.js";
 const search = `<input type="text" placeholder="search"/>`;
 
 export default "";
+//----------------------------------------------//
 let categories = [];
 for (let i = 0; i < products.length; i++) {
   categories[i] = products[i].category;
@@ -28,6 +29,30 @@ function removeDuplicates(incomingData) {
     (item, index) => incomingData.indexOf(item) === index
   );
 }
+categories = removeDuplicates(categories);
+let options = "";
+for (let i = 0; i < categories.length; i++) {
+  options += `<option value="${categories[i].toLowerCase()}">${
+    categories[i]
+  }</option>`;
+}
+document.getElementById("category").innerHTML = options;
+//------------------------------------------------//
+let brands = [];
+for (let i = 0; i < products.length; i++) {
+  brands[i] = products[i].brand;
+}
+function removeDuplicateOfBrand(incomingData) {
+  return incomingData.filter(
+    (item, index) => incomingData.indexOf(item) === index
+  );
+}
+brands = removeDuplicateOfBrand(brands);
+let optionsOfBrand = "";
+for (let i = 0; i < brands.length; i++) {
+  optionsOfBrand += `<option value="${brands[i]}">${brands[i]}</option>`;
+}
+document.getElementById("brand").innerHTML = optionsOfBrand;
 
 {
   /*       
@@ -40,14 +65,6 @@ console.log();
 // document.getElementById(
 //   "category"
 // ).innerHTML = `<option value="science">Science</option>`;
-categories = removeDuplicates(categories);
-let options = "";
-for (let i = 0; i < categories.length; i++) {
-  options += `<option value="${categories[i].toLowerCase()}">${
-    categories[i]
-  }</option>`;
-}
-document.getElementById("category").innerHTML = options;
 
 //2 hours of planning can save weeks of work
 
