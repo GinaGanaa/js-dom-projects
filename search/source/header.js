@@ -87,8 +87,30 @@ function filterFunction(a) {
 
 //end tegs toonuudiig n yalgaj oldog filter bichigdsen baina
 let answer = nums.filter(filterFunction);
-console.log(answer);
+//undefined => utga baihgui
+//null => hooson
+function filterForloop(abc) {
+  let evenNums = [];
+  let count = 0;
+  for (let i = 0; i < abc.length; i++) {
+    const truth = filterFunction(abc[i]);
+    if (truth) {
+      evenNums[count] = abc[i];
+      count++;
+    }
+  }
+
+  return evenNums;
+}
+let answer1 = filterForloop(nums);
+// console.log("answer1:", answer1);
+// console.log("answer:", answer);
 // eniig harj oilgoj baigaad. product uudaas "Electronics" gesen category toi productuudiig yalgaj oldog filter bichih
+
+const categoryElement = document.getElementById("category");
+categoryElement.addEventListener("change", () => {
+  console.log("value: ", categoryElement.value);
+});
 
 //brand filtering
 //sorting
