@@ -93,7 +93,7 @@ function filterForloop(abc) {
   let evenNums = [];
   let count = 0;
   for (let i = 0; i < abc.length; i++) {
-    const truth = filterFunction(abc[i]);
+    const truth = filterFunction([i]);
     if (truth) {
       evenNums[count] = abc[i];
       count++;
@@ -103,8 +103,8 @@ function filterForloop(abc) {
   return evenNums;
 }
 let answer1 = filterForloop(nums);
-// console.log("answer1:", answer1);
-// console.log("answer:", answer);
+console.log("answer1:", answer1);
+console.log("answer:", answer);
 // eniig harj oilgoj baigaad. product uudaas "Electronics" gesen category toi productuudiig yalgaj oldog filter bichih
 
 const categoryElement = document.getElementById("category");
