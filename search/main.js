@@ -1,5 +1,5 @@
 import cards from "./source/cards.js";
-import header from "./source/header.js";
+import { headerDiv, filterByCategory } from "./source/header/index.js";
 
 const root = document.getElementById("root");
-root.innerHTML = `<div>${header}${cards}</div>`;
+root.innerHTML = `<div>${headerDiv}${cards}</div>`;
