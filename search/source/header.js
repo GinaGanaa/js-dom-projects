@@ -93,7 +93,7 @@ function filterForloop(abc) {
   let evenNums = [];
   let count = 0;
   for (let i = 0; i < abc.length; i++) {
-    const truth = filterFunction([i]);
+    const truth = filterFunction(abc[i]);
     if (truth) {
       evenNums[count] = abc[i];
       count++;
@@ -106,7 +106,30 @@ let answer1 = filterForloop(nums);
 console.log("answer1:", answer1);
 console.log("answer:", answer);
 // eniig harj oilgoj baigaad. product uudaas "Electronics" gesen category toi productuudiig yalgaj oldog filter bichih
-
+let filteredCategory = filterLoop(products);
+function filterFunc(category) {
+  if (category == "Electronics") {
+    return true;
+  } else {
+    return false;
+  }
+}
+let answer2 = products.filter(filterFunc);
+console.log("answer2", answer2);
+function filterLoop(product) {
+  let category = [];
+  let count = 0;
+  for (let i = 0; i < product.length; i++) {
+    const truth = filterFunc(product[i].category);
+    if (truth) {
+      category[count] = product[i];
+      count++;
+    }
+  }
+  return category;
+}
+console.log("filtered category", filteredCategory);
+//----------------------------------//
 const categoryElement = document.getElementById("category");
 categoryElement.addEventListener("change", () => {
   console.log("value: ", categoryElement.value);
