@@ -13,14 +13,14 @@
 .news_text {
   font-size: 14px;
   padding-top: 12px;
-  color: gray;
+  color: rgb(138, 137, 137);
 }
 .bottom_text {
   display: flex;
   gap: 20px;
   padding-top: 20px;
   font-size: 13px;
-  color: rgb(139, 138, 138);
+  color: rgb(171, 168, 168);
   padding-left: 220px;
 }
 .newsImage {
