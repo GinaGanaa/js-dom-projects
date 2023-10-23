@@ -41,7 +41,7 @@ export const headerDiv = `<div class="header">
 //   console.log("value: ", categoryElement.value);
 // });
 
-//brand filtering
+//brand filtering,
 //sorting
 
 // console.log(document.getElementById("category").innerHTML);
@@ -52,8 +52,8 @@ export const headerDiv = `<div class="header">
 
 // searchBtn.addEventListener("click", searchHandler);
 
-// filter method uzsen (filterleed zarim product uudiig avch chadsan)
+// filter method uzsen (filterleed zarim productuudiig avch chadsan)
 // sort method sudlah ashiglah (products iig uneer n sortloj console logdono)
 // push method sudlah ashiglah (ooroo zohioj shine product nemj oruulah)
-// pop method sudlah ashiglah (neg product iig ustgah)
+// pop method sudlah ashiglah (neg product iig ustgah).
 // map method sudlah ashigah (product uudiig zovhon ner une tei object bolgoj console.logdoh)

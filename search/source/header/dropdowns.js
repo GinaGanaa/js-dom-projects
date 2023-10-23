@@ -37,4 +37,4 @@ export function generateBrandOptions(products) {
   return options;
 }
 
-//brand options
+//brand options,
