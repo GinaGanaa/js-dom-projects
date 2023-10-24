@@ -57,3 +57,9 @@ export const headerDiv = `<div class="header">
 // push method sudlah ashiglah (ooroo zohioj shine product nemj oruulah)
 // pop method sudlah ashiglah (neg product iig ustgah).
 // map method sudlah ashigah (product uudiig zovhon ner une tei object bolgoj console.logdoh)
+array.sort(compareFunction);
+const numbers = [31, 56, 6, 4, 9, 83, 57];
+numbers.sort(function (a, b) {
+  return a - b;
+});
+console.log(numbers);
