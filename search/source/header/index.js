@@ -54,12 +54,62 @@ export const headerDiv = `<div class="header">
 
 // filter method uzsen (filterleed zarim productuudiig avch chadsan)
 // sort method sudlah ashiglah (products iig uneer n sortloj console logdono)
-// push method sudlah ashiglah (ooroo zohioj shine product nemj oruulah)
-// pop method sudlah ashiglah (neg product iig ustgah).
-// map method sudlah ashigah (product uudiig zovhon ner une tei object bolgoj console.logdoh)
-array.sort(compareFunction);
+// array.sort(compareFunction);
 const numbers = [31, 56, 6, 4, 9, 83, 57];
-numbers.sort(function (a, b) {
-  return a - b;
+numbers.sort((a, b) => {
+  if (a > b) {
+    return 1;
+  } else {
+    return -1;
+  }
 });
 console.log(numbers);
+const filtered = numbers.filter((a) => {
+  return a % 2 == 0;
+});
+console.log("filtered:", filtered);
+
+products.sort((prod1, prod2) => {
+  return prod1.price - prod2.price;
+});
+console.log("Sorted products", products);
+// push method sudlah ashiglah (ooroo zohioj shine product nemj oruulah)
+products.push({
+  id: 21,
+  name: "Apple airpod",
+  image:
+    "https://media.kohlsimg.com/is/image/kohls/3596885?wid=600&hei=600&op_sharpen=1",
+  description:
+    "loaded with features to assist with select hearing needs, from focusing on the voice in front of you in noisy surroundings",
+  price: 58.99,
+  category: "Clothing",
+  brand: "Nike",
+  rating: 4.9,
+  in_stock: true,
+  color: "White",
+  weight: "0.1 kg",
+  dimensions: {
+    length: "N/A",
+    width: "N/A",
+    height: "N/A",
+  },
+});
+
+// pop method sudlah ashiglah (neg product iig ustgah).
+// products.pop();
+// map method sudlah ashigah (product uudiig zovhon ner une tei object bolgoj console.logdoh)
+
+const mapped = products.map((product) => {
+  return {
+    name: product.name,
+    price: product.price,
+  };
+});
+console.log("mapped: ", mapped);
+
+//find products that has more expensive than avarage price
+//find most expensive apple brand product
+//sort by rating.
+//sort by name (you can compare string!)
+//filter products that has dimension
+// filter products that are in stock
