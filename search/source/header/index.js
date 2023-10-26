@@ -108,8 +108,60 @@ const mapped = products.map((product) => {
 console.log("mapped: ", mapped);
 
 //find products that has more expensive than avarage price
-//find most expensive apple brand product
+// products.filter((avgPrice) => {
+//   let count = 0;
+//   count += products.price;
+//   avgPrice = count / products.length;
+//   if (products.price > avgPrice) {
+//     return products;
+//   }
+// });
+// console.log("expensive than avarage price", products.price);
+function avgPrice(productPrice) {
+  let count = 0;
+  let avgPriceOfPros = 0;
+  for (let i = 0; i < productPrice.length; i++) {
+    count += products[i].price;
+  }
+  avgPriceOfPros = count / products.length;
+  return avgPriceOfPros;
+}
+let answer = avgPrice(products);
+console.log("the answer is", answer);
+
+//find most expensive apple brand product //!!!!
+const theAnswer = products.filter((theMostExpApplePro) => {
+  if (theMostExpApplePro.brand == "Apple") {
+    if (theMostExpApplePro.price > products) {
+    }
+    return theMostExpApplePro;
+  }
+});
+console.log("The most expensive one is", theAnswer);
 //sort by rating.
+const ratedProducts = products.sort((firstPro, nextPro) => {
+  if (firstPro.rating >= nextPro.rating) {
+    return firstPro;
+  } else {
+    return nextPro;
+  }
+});
+console.log("rated products", ratedProducts);
+
 //sort by name (you can compare string!)
+const productsName = products.sort((firstProName, nextProName) => {
+  if (firstProName.name > nextProName.name) {
+    return firstProName;
+  }
+});
+console.log("The products by name", productsName);
 //filter products that has dimension
+const dimenisonPros = products.filter((productsWithDim) => {
+  return productsWithDim.dimensions.length == !"N/A";
+});
+console.log("products with dimensions", dimenisonPros);
 //filter products that are in stock
+const inStockPros = products.filter((inStockProducts) => {
+  return inStockProducts.in_stock == true;
+});
+console.log("In stock Products", inStockPros);
