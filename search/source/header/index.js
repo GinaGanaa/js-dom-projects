@@ -112,4 +112,4 @@ console.log("mapped: ", mapped);
 //sort by rating.
 //sort by name (you can compare string!)
 //filter products that has dimension
-// filter products that are in stock
+//filter products that are in stock
