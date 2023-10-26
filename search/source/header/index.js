@@ -68,6 +68,26 @@ const filtered = numbers.filter((a) => {
   return a % 2 == 0;
 });
 console.log("filtered:", filtered);
+const result = [[2, 3, 4], 2, 3].filter((val) => {
+  console.log("val:", val);
+  return true;
+});
+console.log(result);
+
+function customFilter(nums) {
+  let evenNums = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (innerFunction(nums[i])) {
+      evenNums.push(nums[i]);
+    }
+  }
+  return evenNums;
+}
+const innerFunction = (val) => {
+  return val % 2 == 0;
+};
+const result1 = customFilter([31, 56, 6, 4, 9, 83, 57]);
+console.log(result1);
 
 products.sort((prod1, prod2) => {
   return prod1.price - prod2.price;
@@ -108,15 +128,12 @@ const mapped = products.map((product) => {
 console.log("mapped: ", mapped);
 
 //find products that has more expensive than avarage price
-// products.filter((avgPrice) => {
-//   let count = 0;
-//   count += products.price;
-//   avgPrice = count / products.length;
-//   if (products.price > avgPrice) {
-//     return products;
-//   }
-// });
-// console.log("expensive than avarage price", products.price);
+// map ergeed unenuudiig n olno olson unneesee avg olno
+// let avg =?
+products.filter((product) => {
+  //avg ees untei yu?
+});
+console.log("expensive than avarage price", products.price);
 function avgPrice(productPrice) {
   let count = 0;
   let avgPriceOfPros = 0;
@@ -130,11 +147,11 @@ let answer = avgPrice(products);
 console.log("the answer is", answer);
 
 //find most expensive apple brand product //!!!!
-const theAnswer = products.filter((theMostExpApplePro) => {
-  if (theMostExpApplePro.brand == "Apple") {
-    if (theMostExpApplePro.price > products) {
-    }
-    return theMostExpApplePro;
+const theAnswer = products.filter((product) => {
+  if (product.brand == "Apple") {
+    return true;
+  } else {
+    return false;
   }
 });
 console.log("The most expensive one is", theAnswer);
@@ -165,3 +182,14 @@ const inStockPros = products.filter((inStockProducts) => {
   return inStockProducts.in_stock == true;
 });
 console.log("In stock Products", inStockPros);
+
+let arr = [1, 2, 3, 4];
+let mapped1 = arr.map((a) => {
+  return "abc";
+});
+arr.sort((a, b) => {
+  return -10;
+});
+let filtered1 = arr.filter((a) => {
+  return true;
+});
