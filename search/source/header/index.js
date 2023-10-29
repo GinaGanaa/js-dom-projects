@@ -129,7 +129,7 @@ console.log("mapped: ", mapped);
 
 //find products that has more expensive than avarage price
 // map ergeed unenuudiig n olno olson unneesee avg olno
-// let avg =?
+// let avg = ?
 products.filter((product) => {
   //avg ees untei yu?
 });
