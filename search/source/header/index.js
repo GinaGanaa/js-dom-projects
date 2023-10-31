@@ -120,14 +120,15 @@ products.push({
 // map method sudlah ashigah (product uudiig zovhon ner une tei object bolgoj console.logdoh)
 
 const mapped = products.map((product) => {
+  let count = 0;
+  count += product.price;
   return {
-    name: product.name,
-    price: product.price,
+    price: count / products.lenght,
   };
 });
 console.log("mapped: ", mapped);
 
-//find products that has more expensive than avarage price
+//find products that is more expensive than avarage price
 // map ergeed unenuudiig n olno olson unneesee avg olno
 // let avg = ?
 products.filter((product) => {
