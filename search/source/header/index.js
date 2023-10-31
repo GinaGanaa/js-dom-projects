@@ -193,3 +193,4 @@ arr.sort((a, b) => {
 let filtered1 = arr.filter((a) => {
   return true;
 });
+console.log(filtered1);
