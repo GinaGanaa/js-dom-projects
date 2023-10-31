@@ -119,14 +119,31 @@ products.push({
 // products.pop();
 // map method sudlah ashigah (product uudiig zovhon ner une tei object bolgoj console.logdoh)
 
-const mapped = products.map((product) => {
-  let count = 0;
-  count += product.price;
-  return {
-    price: count / products.lenght,
-  };
+// const mapped = products.map((product) => {
+//   let sum = 0;
+//   sum += product.price;
+//   return {
+//     price: sum / products.lenght,
+//   };
+// });
+// console.log("mapped: ", mapped);
+let sum = 0;
+products.map((product) => {
+  sum += product.price;
 });
-console.log("mapped: ", mapped);
+console.log("proPrices: ", sum);
+let avgPrice1 = 0;
+avgPrice1 = sum / products.length;
+console.log("Average price of products", avgPrice1);
+let expensivePro = [];
+products.map((product) => {
+  if (product.price > avgPrice1) {
+    expensivePro.push(product);
+  }
+});
+console.log(expensivePro);
+let str = "asdas sdgs price:10 asd asd ";
+console.log(str.price);
 
 //find products that is more expensive than avarage price
 // map ergeed unenuudiig n olno olson unneesee avg olno
