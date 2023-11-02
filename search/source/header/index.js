@@ -145,7 +145,7 @@ console.log(expensivePro);
 let str = "asdas sdgs price:10 asd asd ";
 console.log(str.price);
 
-//find products that is more expensive than avarage price
+//find products that is more expensive than average price
 // map ergeed unenuudiig n olno olson unneesee avg olno
 // let avg = ?
 products.filter((product) => {
