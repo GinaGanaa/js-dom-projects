@@ -127,6 +127,8 @@ products.push({
 //   };
 // });
 // console.log("mapped: ", mapped);
+//-------------------//
+//find products that is more expensive than average price
 let sum = 0;
 products.map((product) => {
   sum += product.price;
@@ -141,44 +143,41 @@ products.map((product) => {
     expensivePro.push(product);
   }
 });
-console.log(expensivePro);
-let str = "asdas sdgs price:10 asd asd ";
-console.log(str.price);
+console.log("Expensive products than average price", expensivePro);
 
-//find products that is more expensive than average price
 // map ergeed unenuudiig n olno olson unneesee avg olno
 // let avg = ?
 products.filter((product) => {
   //avg ees untei yu?
 });
-console.log("expensive than avarage price", products.price);
-function avgPrice(productPrice) {
-  let count = 0;
-  let avgPriceOfPros = 0;
-  for (let i = 0; i < productPrice.length; i++) {
-    count += products[i].price;
-  }
-  avgPriceOfPros = count / products.length;
-  return avgPriceOfPros;
-}
-let answer = avgPrice(products);
-console.log("the answer is", answer);
+
+// function avgPrice(productPrice) {
+//   let count = 0;
+//   let avgPriceOfPros = 0;
+//   for (let i = 0; i < productPrice.length; i++) {
+//     count += products[i].price;
+//   }
+//   avgPriceOfPros = count / products.length;
+//   return avgPriceOfPros;
+// }
+// let answer = avgPrice(products);
+// console.log("the answer is", answer);
 
 //find most expensive apple brand product //!!!!
-const theAnswer = products.filter((product) => {
-  if (product.brand == "Apple") {
-    return true;
+const theAnswer = products.sort((product, product1) => {
+  if (product.price > product1.price) {
+    return -1;
   } else {
-    return false;
+    return 1;
   }
 });
 console.log("The most expensive one is", theAnswer);
 //sort by rating.
 const ratedProducts = products.sort((firstPro, nextPro) => {
   if (firstPro.rating >= nextPro.rating) {
-    return firstPro;
+    return -1;
   } else {
-    return nextPro;
+    return 1;
   }
 });
 console.log("rated products", ratedProducts);
@@ -186,13 +185,20 @@ console.log("rated products", ratedProducts);
 //sort by name (you can compare string!)
 const productsName = products.sort((firstProName, nextProName) => {
   if (firstProName.name > nextProName.name) {
-    return firstProName;
+    return 1;
+  } else {
+    return -1;
   }
 });
 console.log("The products by name", productsName);
 //filter products that has dimension
-const dimenisonPros = products.filter((productsWithDim) => {
-  return productsWithDim.dimensions.length == !"N/A";
+const dimenisonPros = products.filter((product) => {
+  return product.dimensions.length != "N/A";
+  // if (product.dimensions.length == "N/A") {
+  //   return false;
+  // } else {
+  //   return true;
+  // }
 });
 console.log("products with dimensions", dimenisonPros);
 //filter products that are in stock
@@ -205,9 +211,12 @@ let arr = [1, 2, 3, 4];
 let mapped1 = arr.map((a) => {
   return "abc";
 });
+console.log(mapped1);
+
 arr.sort((a, b) => {
-  return -10;
+  return -1;
 });
+console.log("arr", arr);
 let filtered1 = arr.filter((a) => {
   return true;
 });
