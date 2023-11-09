@@ -1,4 +1,4 @@
-// altan durem
+// altan durem.
 // yu hiih gej baigaa bilee ?
 // tuuniig hiihed yu heregtei ve ?
 // ene heregtei zuiliig herhen hiih ve ?
@@ -13,7 +13,7 @@ function filterFunction(a) {
   }
 }
 
-//end tegs toonuudiig n yalgaj oldog filter bichigdsen baina
+//end tegsh toonuudiig n yalgaj oldog filter bichigdsen baina
 let answer = nums.filter(filterFunction);
 //undefined => utga baihgui
 //null => hooson
